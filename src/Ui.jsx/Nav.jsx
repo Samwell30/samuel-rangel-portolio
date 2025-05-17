@@ -3,34 +3,25 @@ import { Link } from "react-router-dom";
 const Nav = ({ onContactClick, onAboutClick }) => {
   return (
     <nav>
-      <div className="nav__container">
-        <div className="nav__icon-wrapper">
-          <i
-            className="fa-solid fa-computer nav__icon"
-            style={{ fontSize: "2rem", color: "#333" }}
-          ></i>
-        </div>
-        <ul className="nav__links">
-          <li className="nav__list">
-            <Link to="/" className="nav__link">
-              Home
-            </Link>
+      <figure>
+      <i id="logo" className="fa-solid fa-laptop"
+      style={{ fontSize: "2rem", color: "#333" }}></i>
+      </figure>
+        <ul className="nav__link--list">
+          <li className="nav__link">
+            <a className="nav__link--anchor" onClick={onAboutClick}>About</a>
           </li>
-          <li>
-            <a className="about__btn" onClick={onAboutClick}>About</a>
-          </li>
-          <li className="nav__list">
-            <a href="#projects" className="nav__link">
+          <li className="nav__link">
+            <a href="#projects" className="nav__link--anchor">
               Projects
             </a>
           </li>
-          <li>
-            <a className="btn" onClick={onContactClick}>
+          <li className="nav__link">
+            <a className="nav__link--anchor contact" onClick={onContactClick}>
               Contact
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   );
 };
