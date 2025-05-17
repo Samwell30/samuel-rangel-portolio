@@ -1,0 +1,38 @@
+/* src/components/BackgroundShapes.css */
+
+.bg-circle {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #a6bbaf, #38b36d);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.spark {
+  position: absolute;
+  width: 80px;
+  right: 0;
+  top: 40px;
+  aspect-ratio: 1;
+  background: #38b36d;
+    opacity: 0.5;
+  clip-path: polygon(
+    40% 40%, 50% 0, 60% 40%, 100% 50%,
+    60% 60%, 50% 100%, 40% 60%, 0 50%
+  );
+  z-index: -1; /* send it behind other content */
+}
+
+.bg-blob {
+  position: absolute;
+  bottom: -80px;
+  right: 49px;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  opacity: 0.3;
+}

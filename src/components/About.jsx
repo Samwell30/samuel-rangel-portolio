@@ -1,7 +1,7 @@
 import '../Modal.css';
 import { useState } from 'react';
 
-export default function AboutModal({ onClose }) {
+export default function AboutModal({ onClose, content }) {
   const [isClosing, setIsClosing] = useState(false);
 
   const handleClose = () => {
