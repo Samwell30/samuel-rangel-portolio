@@ -311,7 +311,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
 @media (max-width: 1110px) {
   .header__content-wrapper {
     gap: 14rem;
