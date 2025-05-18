@@ -5,7 +5,6 @@ import Nav from "./Ui.jsx/Nav";
 import ContactModal from "./components/ContactModal";
 import Modal from "./components/Modal";
 import Footer from "./components/Footer";
-import degree  from "./assets/MA Degree_2020.jpg";
 
 function App() {
   const [showContact, setShowContact] = useState(false);
@@ -35,9 +34,7 @@ function App() {
           <h2 className="modal__title">Hi There!</h2>
           <p className="modal__para">
             My name is Samuel Rangel. I am excited to go on this journey to become a developer.
-            <br/> My journey here has been ... I went to graduate school and recieved a Master's in <a src={degree}>Psychology</a>. Then I had 
-            <br/> two daughters and life got went on its way. Throughout that time, being a developer has always been in the back of my mind.
-            Early this year, I found Frontend Development and they opened my eyes to my ultimate goal.
+            <br/> "adding short bio here...."
           </p>
         </>
       );
