@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Samwell30/samuel-rangel-portolio/static/css/main.28c8f55e.css",
+    "main.js": "/Samwell30/samuel-rangel-portolio/static/js/main.d22ceab2.js",
+    "static/js/453.0e3a542c.chunk.js": "/Samwell30/samuel-rangel-portolio/static/js/453.0e3a542c.chunk.js",
+    "static/media/Sam_Denise.jpg": "/Samwell30/samuel-rangel-portolio/static/media/Sam_Denise.dd40967755fe42569a6e.jpg",
+    "static/media/fa-solid-900.ttf": "/Samwell30/samuel-rangel-portolio/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/Samwell30/samuel-rangel-portolio/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/Samwell30/samuel-rangel-portolio/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/Samwell30/samuel-rangel-portolio/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/Samwell30/samuel-rangel-portolio/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/Samwell30/samuel-rangel-portolio/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Samwell30/samuel-rangel-portolio/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Samwell30/samuel-rangel-portolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/Samwell30/samuel-rangel-portolio/index.html",
+    "main.28c8f55e.css.map": "/Samwell30/samuel-rangel-portolio/static/css/main.28c8f55e.css.map",
+    "main.d22ceab2.js.map": "/Samwell30/samuel-rangel-portolio/static/js/main.d22ceab2.js.map",
+    "453.0e3a542c.chunk.js.map": "/Samwell30/samuel-rangel-portolio/static/js/453.0e3a542c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28c8f55e.css",
+    "static/js/main.d22ceab2.js"
+  ]
+}
