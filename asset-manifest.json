@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/samuel-rangel-portolio/static/css/main.c419f2cc.css",
-    "main.js": "/samuel-rangel-portolio/static/js/main.99b77119.js",
+    "main.js": "/samuel-rangel-portolio/static/js/main.18b24ec1.js",
     "static/js/453.0e3a542c.chunk.js": "/samuel-rangel-portolio/static/js/453.0e3a542c.chunk.js",
     "static/media/Sam_Denise.jpg": "/samuel-rangel-portolio/static/media/Sam_Denise.dd40967755fe42569a6e.jpg",
     "static/media/fa-solid-900.ttf": "/samuel-rangel-portolio/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -14,11 +14,11 @@
     "static/media/fa-v4compatibility.woff2": "/samuel-rangel-portolio/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/samuel-rangel-portolio/index.html",
     "main.c419f2cc.css.map": "/samuel-rangel-portolio/static/css/main.c419f2cc.css.map",
-    "main.99b77119.js.map": "/samuel-rangel-portolio/static/js/main.99b77119.js.map",
+    "main.18b24ec1.js.map": "/samuel-rangel-portolio/static/js/main.18b24ec1.js.map",
     "453.0e3a542c.chunk.js.map": "/samuel-rangel-portolio/static/js/453.0e3a542c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c419f2cc.css",
-    "static/js/main.99b77119.js"
+    "static/js/main.18b24ec1.js"
   ]
 }
