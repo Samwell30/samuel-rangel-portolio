@@ -258,13 +258,17 @@ nav {
   text-align: center;
 }
 
-/* .project__card img {
+.project__image {
   width: 100%;
-  max-height: 180px;
+  max-width: 420px;
+  max-height: 280px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
   margin-bottom: 1rem;
-} */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+}
+
 
 .project__card:hover {
   transform: translateY(-6px) scale(1.25);

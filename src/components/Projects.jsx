@@ -1,4 +1,6 @@
 import React from 'react'
+import dnd from '../assets/dnd helper.png';
+import blog from '../assets/react blog.png';
 
 const Projects = () => {
   return (
@@ -6,16 +8,18 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="project__list">
         <div className="project__box">
-        <div className="project__card">
-          <h3>Weather App</h3>
-          <p>React app with live weather data using OpenWeather API.</p>
-          <a href="" target="_blank" rel="noreferrer">View Live</a>
-        </div>
-        <div className="project__card">
-          <h3>Todo List</h3>
-          <p>Simple todo app with localStorage and React hooks.</p>
-          <a href="" target="_blank" rel="noreferrer">View Live</a>
-        </div>
+          <div className="project__card">
+            <h3>Dnd Helper</h3>
+            <p>A website to assist dungeon and dragon players.</p>
+            <a href="https://samdndhelper.netlify.app" target="_blank" rel="noreferrer">View Live</a>
+            <img src={dnd} alt="Dnd Helper screenshot" className="project__image" />
+          </div>
+          <div className="project__card">
+            <h3>Simple React Blog</h3>
+            <p>Simple blog created with React and Firebase where users can add articles.</p>
+            <a href="https://samreactblog.netlify.app" target="_blank" rel="noreferrer">View Live</a>
+            <img src={blog} alt="Simple React Blog screenshot" className="project__image" />
+          </div>
         </div>
       </div>
     </section>

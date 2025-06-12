@@ -17,8 +17,8 @@ function App() {
         <>
           <h2 className="modal__title">About this portfolio</h2>
           <p className="modal__para">
-            This portfolio is to display my skills and enjoyment of building React apps and solving real-world problems. 
-            <br/> The projects below were created using React, Javascript, CSS, and HTML.
+            This portfolio is to display my skills and enjoyment of building React apps and solving real-world problems.
+            <br /> The projects below were created using React, Javascript, CSS, and HTML.
           </p>
           <div className="icons">
             <i class="fa-brands fa-react"></i>
@@ -34,7 +34,7 @@ function App() {
           <h2 className="modal__title">Hi There!</h2>
           <p className="modal__para">
             My name is Samuel Rangel. I am excited to go on this journey to become a developer.
-            <br/> "adding short bio here...."
+            <br /> "adding short bio here...."
           </p>
         </>
       );
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/samuel-rangel-portolio">
         <Nav
           onContactClick={() => setShowContact(true)}
           onAboutClick={() => openAboutModal("nav")}
