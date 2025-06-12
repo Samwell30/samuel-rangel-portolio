@@ -17,20 +17,30 @@ const Home = ({ onAboutClick }) => {
             with a strong passion for building web applications with greater
             user experiences.
             <br /> Here is a bit more{" "}
-            <a className="green click" onClick={onAboutClick}>
+            <a className="green click" href="#about" onClick={onAboutClick}>
               about me
             </a>
           </p>
           <div className="social__list">
-            <a href="https://www.linkedin.com/" className="social__link click">
+            <a
+              href="https://www.linkedin.com/"
+              className="social__link click"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/" className="social__link click">
+            <a
+              href="https://github.com/"
+              className="social__link click"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="" className="social__link click">
+            <button className="social__link click" type="button" aria-label="Download PDF">
               <i className="fas fa-file-pdf"></i>
-            </a>
+            </button>
           </div>
         </div>
         <div className="holographic-container">

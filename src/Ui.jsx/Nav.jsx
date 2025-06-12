@@ -7,7 +7,7 @@ const Nav = ({ onContactClick, onAboutClick }) => {
       </figure>
       <ul className="nav__link--list">
         <li className="nav__link">
-          <a className="nav__link--anchor" onClick={onAboutClick}>About</a>
+          <a className="nav__link--anchor" href="#about" onClick={onAboutClick}>About</a>
         </li>
         <li className="nav__link">
           <a href="#projects" className="nav__link--anchor">
@@ -15,7 +15,7 @@ const Nav = ({ onContactClick, onAboutClick }) => {
           </a>
         </li>
         <li className="nav__link">
-          <a className="nav__link--anchor contact" onClick={onContactClick}>
+          <a className="nav__link--anchor contact" href="#contact" onClick={onContactClick}>
             Contact
           </a>
         </li>
