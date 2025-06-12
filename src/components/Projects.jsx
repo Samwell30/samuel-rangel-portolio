@@ -11,13 +11,13 @@ const Projects = () => {
           <div className="project__card">
             <h3>Dnd Helper</h3>
             <p>A website to assist dungeon and dragon players.</p>
-            <a href="https://samdndhelper.netlify.app" target="_blank" rel="noreferrer">View Live</a>
+            <a href="https://samdndhelper.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a>
             <img src={dnd} alt="Dnd Helper screenshot" className="project__image" />
           </div>
           <div className="project__card">
             <h3>Simple React Blog</h3>
             <p>Simple blog created with React and Firebase where users can add articles.</p>
-            <a href="https://samreactblog.netlify.app" target="_blank" rel="noreferrer">View Live</a>
+            <a href="https://samreactblog.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a>
             <img src={blog} alt="Simple React Blog screenshot" className="project__image" />
           </div>
         </div>
