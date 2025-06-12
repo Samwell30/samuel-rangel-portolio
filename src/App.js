@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="/samuel-rangel-portolio">
+      <BrowserRouter>
         <Nav
           onContactClick={() => setShowContact(true)}
           onAboutClick={() => openAboutModal("nav")}
