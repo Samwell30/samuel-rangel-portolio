@@ -23,7 +23,7 @@ const Home = ({ onAboutClick }) => {
           </p>
           <div className="social__list">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/samuel-rangel-32494319a"
               className="social__link click"
               target="_blank"
               rel="noreferrer"
@@ -31,16 +31,23 @@ const Home = ({ onAboutClick }) => {
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/Samwell30"
               className="social__link click"
               target="_blank"
               rel="noreferrer"
             >
               <i className="fab fa-github"></i>
             </a>
-            <button className="social__link click" type="button" aria-label="Download PDF">
+            <a
+              href={require("../assets/Samuel Rangel Resume.docx")}
+              className="social__link click"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Resume"
+            >
               <i className="fas fa-file-pdf"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div className="holographic-container">

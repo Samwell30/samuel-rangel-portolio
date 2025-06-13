@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Nav from "./Ui.jsx/Nav";
 import ContactModal from "./components/ContactModal";
@@ -44,23 +43,16 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Nav
-          onContactClick={() => setShowContact(true)}
-          onAboutClick={() => openAboutModal("nav")}
-        />
-        <Routes>
-          <Route
-            path="/"
-            element={<Home onAboutClick={() => openAboutModal("home")} />}
-          />
-        </Routes>
-        {isAboutOpen && (
-          <Modal onClose={() => setIsAboutOpen(false)} content={aboutContent} />
-        )}
-        {showContact && <ContactModal onClose={() => setShowContact(false)} />}
-        <Footer />
-      </BrowserRouter>
+      <Nav
+        onContactClick={() => setShowContact(true)}
+        onAboutClick={() => openAboutModal("nav")}
+      />
+      <Home onAboutClick={() => openAboutModal("home")} />
+      {isAboutOpen && (
+        <Modal onClose={() => setIsAboutOpen(false)} content={aboutContent} />
+      )}
+      {showContact && <ContactModal onClose={() => setShowContact(false)} />}
+      <Footer onContactClick={() => setShowContact(true)} />
     </div>
   );
 }

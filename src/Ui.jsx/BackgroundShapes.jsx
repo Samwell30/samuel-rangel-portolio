@@ -4,11 +4,7 @@ const BackgroundShapes = () => {
   return (
     <>
       <div className="bg-circle"></div>
-      <div className="bg-circle--two"></div>
       <div className="spark"></div>
-      <div className="moon"></div>
-      <div id="cross"></div>
-      <div id="infinity"></div>
       <svg className="bg-blob" viewBox="0 0 200 200">
         <path
           fill="#38b36d"
