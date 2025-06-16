@@ -1,6 +1,6 @@
 import React from "react";
-import dnd from "../assets/dnd helper.png";
 import blog from "../assets/react blog.png";
+import dnd from "../assets/dnd helper.png"
 
 const Projects = () => {
   return (
