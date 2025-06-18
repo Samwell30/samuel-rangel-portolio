@@ -1,6 +1,7 @@
 import React from "react";
 import blog from "../assets/react blog.png";
 import dnd from "../assets/dnd helper.png"
+import skintric from '../assets/skintric.png'
 
 const Projects = () => {
   return (
@@ -48,6 +49,29 @@ const Projects = () => {
           <img
             src={blog}
             alt="Simple React Blog screenshot"
+            className="project__image"
+          />
+        </div>
+      </div>
+      <div className="project__box">
+        <div className="project__card">
+          <div className="project__link-topright">
+            <a
+              href="https://skinstric-internship-beta.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="green click">View Live</span>
+            </a>
+          </div>
+          <h3>Skintric Internship Project</h3>
+          <p>
+            Project created for Skintric. Users can add demographic information, and a 
+            import/ or take a picture and upload that to a back API.
+          </p>
+          <img
+            src={skintric}
+            alt="Skintric"
             className="project__image"
           />
         </div>
