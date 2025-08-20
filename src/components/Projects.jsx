@@ -1,24 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
+import blog from '../assets/react blog.png';
+import dnd from '../assets/dnd helper.png';
+import skintric from '../assets/skintric.png';
+import library from '../assets/React Library app.png';
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React and Framer Motion.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
-    link: "#"
+    title: "DND Helper",
+    description: "A tool for managing Dungeons & Dragons campaigns.",
+    image: dnd,
+    link: "https://samdndhelper.netlify.app"
   },
   {
-    title: "Design System",
-    description: "Reusable UI components for modern web apps.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
-    link: "#"
+    title: "React Blog",
+    description: "A modern blog built with React.",
+    image: blog,
+    link: "https://samreactblog.netlify.app"
   },
   {
-    title: "Landing Page",
-    description: "A sleek landing page for startups.",
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-    link: "#"
+    title: "Skintric",
+    description: "A skincare tracking app.",
+    image: skintric,
+    link: "https://skinstric-internship-beta.vercel.app"
+  },
+  {
+    title: "React Library App",
+    description: "A library management app built with React.",
+    image: library,
+    link: "https://keen-cranachan-68534f.netlify.app/"
   }
 ];
 

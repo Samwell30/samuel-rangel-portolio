@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com"; 
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null); 
+  const form = useRef(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setError(null);
+
+    emailjs
+      .sendForm(
+        "service_itvjedi",
+        "template_5cttofn",
+        form.current,
+        "Veg1CcRKxOFyiOH7O"
+      )
+      .then((result) => {
+        setSubmitted(true);
+        form.current.reset();
+      })
+      .catch((err) => {
+        setError("Failed to send. Please try again.");
+        console.log("EmailJS error:", err);
+      });
   };
 
   return (
@@ -22,7 +41,7 @@ const Contact = () => {
         {submitted ? (
           <p className="contact-success">Thank you! I'll get back to you soon.</p>
         ) : (
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form" ref={form} onSubmit={handleSubmit}>
             <input
               type="text"
               name="name"
@@ -45,6 +64,7 @@ const Contact = () => {
               rows={5}
             />
             <button type="submit" className="btn">Send Message</button>
+            {error && <p className="contact-error">{error}</p>}
           </form>
         )}
       </motion.div>
