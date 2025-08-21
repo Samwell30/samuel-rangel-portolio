@@ -1,4 +1,14 @@
 body {
+/* Swiper pagination custom styles */
+.swiper-pagination-bullet {
+  border: 2px solid #22c55e;
+  background: #1e293b;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #22c55e;
+  border-color: #fff;
+}
   min-height: 100vh;
   background: linear-gradient(180deg, #0f172a 60%, #166534 100%);
   margin: 0;
@@ -146,22 +156,78 @@ body {
   margin: 0 auto;
 }
 
-.card {
-  border: 4px solid #22c55e;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(34,197,94,0.08);
-  transition: box-shadow 0.2s, transform 0.2s;
-  text-decoration: none;
+/* Centered carousel effect */
+.carousel {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+  padding: 2rem 0;
+  justify-content: center;
+  /* Add horizontal padding so first/last card can be centered */
+  padding-left: 25vw;
+  padding-right: 25vw;
+  position: relative;
 }
 
-.card:hover {
-  box-shadow: 0 8px 32px rgba(34,197,94,0.15);
-  transform: scale(1.04);
+.card {
+  scroll-snap-align: center;
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(56,189,248,0.12);
+  min-width: 700px;
+  max-width: 740px;
+  flex: 0 0 auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0.6;
+  scale: 1;
+  padding: 3rem 2rem;
 }
+
+
+.carousel:has(.card:hover) .card {
+  opacity: 0.6;
+  scale: 0.92;
+}
+.carousel .card:hover {
+  opacity: 1;
+  scale: 1.05;
+  z-index: 2;
+  box-shadow: 0 8px 32px rgba(34,197,94,0.15);
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 1rem;
+  cursor: grab;
+}
+
+.carousel-wrapper:active {
+  cursor: grabbing;
+}
+
+
+.carousel-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* About  */
 
 .about {
   min-height: 40vh;
@@ -224,6 +290,21 @@ body {
 .icons i {
   font-size: 2rem;
   color: #22c55e;
+}
+
+.tech-icon {
+  font-size: 2.5rem;
+  margin: 0 1rem;
+  transition: border 0.3s, transform 0.3s;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.tech-icon:hover {
+  border: 2px solid #22c55e; 
+  transform: scale(1.15);
 }
 
 
@@ -411,17 +492,6 @@ body {
   }
   .about__text, .techstack__para {
     font-size: 1.04rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .card img {
-    height: 60px;
-    object-fit: contain;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    width: 100%;
-    background: #fff;
   }
 }
 

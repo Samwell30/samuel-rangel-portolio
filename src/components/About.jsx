@@ -25,10 +25,10 @@ const About = () => {
               <br /> The projects below were created using React, Firebase Javascript, CSS, and HTML.
             </p>
             <div className="icons">
-              <i className="fa-brands fa-react"></i>
-              <i className="fa-brands fa-js"></i>
-              <i className="fa-brands fa-html5"></i>
-              <i className="fa-brands fa-css3-alt"></i>
+              <i className="fa-brands fa-react tech-icon"></i>
+              <i className="fa-brands fa-js tech-icon"></i>
+              <i className="fa-brands fa-html5 tech-icon"></i>
+              <i className="fa-brands fa-css3-alt tech-icon"></i>
             </div>
           </div>
         </div>
