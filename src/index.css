@@ -1,4 +1,11 @@
 body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a 60%, #166534 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background: #0f172a;
@@ -8,21 +15,23 @@ body {
 
 
 .hero {
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
   text-align: center;
-  position: relative;
 }
 
 .hero-title {
-  font-size: 7rem;
-  letter-spacing: 2px;
-  margin-bottom: -3rem;
-  color: #fff;
-  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  flex-wrap: wrap;
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  word-break: break-word;
 }
 
 .hero-subtitle {
@@ -31,7 +40,6 @@ body {
   color: #22c55e;
   margin-bottom: 1rem;
 }
-
 
 .hero-developer {
   margin-top: 0.1rem;
@@ -107,20 +115,23 @@ body {
 
 .navbar-links a:hover {
   color: #22c55e; 
-}.btn {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  border: none;
-  background: #166534;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.btn:hover {
-  background: #166534;
 }
 
+.btn {
+  background: linear-gradient(90deg, #166534 60%, #0f172a 100%);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(22,101,52,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(22,101,52,0.25);
+}
 
 .projects {
   padding: 6rem 0 4rem 0;
@@ -277,6 +288,29 @@ body {
   margin-top: 2rem;
 }
 
+.github-btn {
+  background: #fff;
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 1.15rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(56,189,248,0.18);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  border: 2px solid #0f172a;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.github-btn:hover {
+  background: #fff;
+  color: #166534;
+  box-shadow: 0 6px 24px rgba(22,101,52,0.18);
+  transform: scale(1.07);
+}
+
 
 @media (max-width: 700px) {
   .navbar-content {
@@ -322,3 +356,72 @@ body {
     padding: 1.5rem 0.5rem;
   }
 }
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle,
+  .hero-developer {
+    font-size: 1.3rem;
+  }
+  .hero-tagline {
+    font-size: 1rem;
+  }
+    #about {
+    margin-top: -10rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .hero-subtitle,
+  .hero-developer {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 70vh;
+    padding: 1rem 0.5rem;
+  }
+  .hero-title {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    word-break: break-word;
+  }
+  .hero-subtitle,
+  .hero-developer {
+    font-size: 1rem;
+  }
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+  #about, #projects {
+    margin-top: -5rem;
+  }
+  .about__text, .techstack__para {
+    font-size: 1.04rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .card img {
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 100%;
+    background: #fff;
+  }
+}
+
