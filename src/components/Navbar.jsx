@@ -38,7 +38,7 @@ const Navbar = ({ scrollYProgress }) => {
             target="_blank"
             rel="noreferrer"
           >Github</a>
-          <a href={require("../assets/Samuel Rangel Resume.docx")}
+          <a href={require("../assets/Samuel Rangel Resume.docx.pdf")}
             className="social__link click"
             download
             target="_blank"
